@@ -1,0 +1,44 @@
+/* src/index.css */
+:root {
+  --primary-green: #2E7D32;    /* Deep forest green for headers/buttons */
+  --light-green: #A5D6A7;      /* Light green for accents/hovers */
+  --white: #FFFFFF;            /* White background */
+  --text-gray: #666;          /* Subtle text color */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+  line-height: 1.6;
+  background-color: var(--white);
+  color: var(--text-gray);
+}
+
+a {
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--light-green);
+}
+
+/* Reset and normalize styles */
+button, input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Ensure responsiveness and modern layout */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,83 @@
+.Card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: top;
+  margin-left: 37px;
+}
+
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.ImageBox {
+  position: relative;
+}
+
+.DataImage {
+  width: 180px;
+  height: 240px;
+  border-radius: 9px;
+}
+
+.DataStatus {
+  position:absolute;
+  top: 5px;
+  left: 5px;
+  padding: 4px 4px 3px 4px;
+  background-color: white;
+  border-radius: 3px;
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17.6px;
+  color:#222222
+}
+
+.Rate {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.Rating, .Review, .Location {
+  margin: 0;
+  font-size: 12px ;
+  font-weight: 300;
+  margin-right: 5px;
+}
+
+.Review, .Location {
+  color : #918E9B
+}
+
+.Star {
+  width: 14px;
+  height: 14px;
+  border-radius: 0.5px;
+  margin: 0px 5px 0px 0px;
+}
+
+.Ellipse {
+  width: 2px;
+  height: 2px;
+  color: #918E9B;
+  margin-top :5px;
+  margin-right: 5px; 
+}
+
+.Title {
+  font-weight: 300;
+  font-size: 12px;
+  color: #353434;
+  margin: 10px 0px 10px 0px;
+}
+
+.Price {
+  margin: 0px;
+  font-size: 12px;
+  color: #353434;
+}

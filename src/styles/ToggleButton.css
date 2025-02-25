@@ -1,0 +1,67 @@
+/* src/components/common/ToggleButton.css */
+:root {
+  --primary-green: #2E7D32;
+  --light-green: #A5D6A7;
+  --white: #FFFFFF;
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  outline: none;
+  width: 30px; /* Button width */
+  height: 20px; /* Total height for 3 bars */
+  position: relative;
+  transition: transform 0.3s ease; /* Smooth transition for hover or click */
+}
+
+.toggle-button:hover {
+  transform: scale(1.05); /* Slight scale-up on hover for a modern effect */
+}
+
+.bar {
+  width: 100%; /* Default full width of bars */
+  height: 3px;
+  background-color: var(--primary-green); /* Default green */
+  position: absolute;
+  transition: all 0.3s ease; /* Smooth transitions for all changes */
+}
+
+.bar:nth-child(1) {
+  top: 0;
+}
+
+.bar:nth-child(2).middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bar:nth-child(3) {
+  bottom: 0;
+}
+
+/* Hover effect: Shorten the middle bar */
+.toggle-button:hover .middle {
+  width: 70%; /* Shorten the middle bar on hover */
+  background-color: var(--light-green); /* Change to light green on hover */
+}
+
+/* Open state (transform into X) */
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: var(--primary-green);
+}
+
+.bar.open:nth-child(2).middle {
+  opacity: 0; /* Hide middle bar when open */
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+  background-color: var(--primary-green);
+}
