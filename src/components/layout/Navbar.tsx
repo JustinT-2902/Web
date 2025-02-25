@@ -12,15 +12,15 @@ const Header = () => {
   return (
     <header>
       <nav className="Nav">
-        <a href="index.html" className="Logo">
-          <img src="public\assets\Logo.png" alt="" className="LogoImage" />
+        <a href="/" className="Logo">
+          <img src="\assets\Logo.png" alt="" className="LogoImage" />
           <h1 className="sitename">GREEN MINDSET</h1>
         </a>
 
         <div className="search-container">
           <button onClick={handleSearch} className="search-button">
             <img
-              src="public\assets\images\Navbar\SearchButton.png"
+              src="\assets\images\Navbar\SearchButton.png"
               alt=""
               className="search-icon"
             />
@@ -44,7 +44,7 @@ const Header = () => {
             onClick={() => setIsOpen(!isOpen)}
           >
             <img
-              src="public\assets\images\Navbar\HambugerBar.png"
+              src="\assets\images\Navbar\HambugerBar.png"
               alt=""
               className="NavIcon"
             />
@@ -58,7 +58,7 @@ const Header = () => {
           <p>CLOSE</p>
           <button className="XButton" onClick={() => setIsOpen(!isOpen)}>
             <img
-              src="public\assets\images\Navbar\XButton.png"
+              src="\assets\images\Navbar\XButton.png"
               alt=""
               className="XImage"
             />
@@ -107,7 +107,7 @@ const Header = () => {
             className="nav-item dropdown"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
-            <a className="nav-link" href="src\pages\Services.tsx">
+            <a className="nav-link" href="\pages\Services.tsx">
               <div className="nav-link-container">
                 <p>Services</p>
                 <p>{">"}</p>
@@ -145,15 +145,6 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </div>
-
-      <div>
-        <video autoPlay loop muted playsInline style={{ width: "100%" }}>
-          <source
-            src="public\assets\images\Navbar\Pinterest media.mp4"
-            type="video/mp4"
-          />
-        </video>
       </div>
     </header>
   );

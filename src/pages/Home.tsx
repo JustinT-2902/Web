@@ -1,9 +1,16 @@
 import React from "react";
+import "../styles/Home.css";
 
 const Home = () => {
   return (
     <div className="home-page">
-      <h1>Welcome to Our Psychology Platform</h1>
+      <div className="background-container">
+        <img
+          src="public\assets\images\Navbar\Background.jpeg"
+          alt=""
+          className="background"
+        />
+      </div>
       {/* Add your content here */}
     </div>
   );
