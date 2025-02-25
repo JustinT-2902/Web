@@ -102,12 +102,42 @@ color: rgb(28, 134, 28)
   align-items: center;
 }
 
-.navbar {
-  margin: 0 30px;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  background: transparent;
+.hamburger-lines {
+  display: fixed;
+  top: 0;
+  right: 0;
+  height: 26px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: black;
+}
+
+.line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+  background-color: rgb(107, 233, 107)
+}
+
+.line2 {
+  transition: transform 0.2s ease-in-out;
+  background-color: rgb(25, 122, 25)
+  
+}
+
+.line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+  background-color: rgb(1, 26, 1)
 }
 
 .NavIcon {

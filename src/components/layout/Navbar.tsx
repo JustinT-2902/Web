@@ -39,15 +39,13 @@ const Header = () => {
           <p className="menu">MENU</p>
 
           <button
-            className="navbar"
+            className="hamburger-lines"
             type="button"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <img
-              src="\assets\images\Navbar\HambugerBar.png"
-              alt=""
-              className="NavIcon"
-            />
+            <span className="line line1"></span>
+            <span className="line line2"></span>
+            <span className="line line3"></span>
           </button>
         </div>
       </nav>
