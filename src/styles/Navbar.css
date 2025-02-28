@@ -112,6 +112,8 @@ color: rgb(28, 134, 28)
   flex-direction: column;
   justify-content: space-between;
   background-color: transparent;
+  margin-right: 30px;
+  opacity: 0.8;
 }
 
 .line {
@@ -119,26 +121,30 @@ color: rgb(28, 134, 28)
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: black;
 }
 
 .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
-  background-color: rgb(107, 233, 107)
+  background-color: #9bf865;
 }
 
 .line2 {
   transition: transform 0.2s ease-in-out;
-  background-color: rgb(25, 122, 25)
-  
+  background-color: rgb(90, 196, 99) 
 }
 
 .line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
-  background-color: rgb(1, 26, 1)
+  background-color: rgb(56, 163, 97)
 }
+
+.hamburger-lines:hover {
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+
 
 .NavIcon {
   border: none;
@@ -212,9 +218,6 @@ color: rgb(28, 134, 28)
   color: black;
 }
 
-.dropdown-menu {
-  display: none;
-}
 
 .showdropdownitem {
   display: block;
@@ -228,12 +231,32 @@ color: rgb(28, 134, 28)
 
 
 .XButton{
-  background: none;
-  border: none;
-  margin: 5px 10px 0 0;
+  height: 30px;
+  width: 37.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  margin-right: 10px;
+  margin-top: 15px;
+  opacity: 0.8;
   cursor: pointer;
-  
 }
+
+.line4 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+  background-color: #6fd434;
+  transform: rotate(45deg);
+}
+
+.line5 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+  background-color: #6fd434;
+  transform: rotate(-45deg);
+}
+
 .XButtonContainer{
   display: flex;
   flex-direction: row;
@@ -309,4 +332,37 @@ color: rgb(28, 134, 28)
   .nav-collapse.show {
     width: 300px;
   }
+}
+
+.dropdown-menu {
+  opacity: 1;
+  background-color: rgb(249, 250, 249);
+  margin:0;
+  margin-left:-150%;
+  top:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  z-index: 1100;
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+}
+
+.showdropdownitem-Blog{
+    z-index: 1100;
+    opacity: 1;
+    margin-left:0;
+}
+
+.showdropdownitem-Blog .nav-collapse.show {
+  display: none;
+}
+
+.dropdown-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  height: 100%;
 }

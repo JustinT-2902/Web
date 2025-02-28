@@ -36,8 +36,6 @@ const Header = () => {
         </div>
 
         <div className="menu-container">
-          <p className="menu">MENU</p>
-
           <button
             className="hamburger-lines"
             type="button"
@@ -53,55 +51,80 @@ const Header = () => {
       {/* Collapsible Menu */}
       <div className={`nav-collapse ${isOpen ? "show" : ""}`}>
         <div className="XButtonContainer">
-          <p>CLOSE</p>
           <button className="XButton" onClick={() => setIsOpen(!isOpen)}>
-            <img
-              src="\assets\images\Navbar\XButton.png"
-              alt=""
-              className="XImage"
-            />
+            <span className="line line4"></span>
+            <span className="line line5"></span>
           </button>
         </div>
 
-        <ul className="navbar-nav">
-          <li className="nav-item">
+        <div className="navbar-nav">
+          <div className="nav-item">
             <a className="nav-link" href="/">
               <div className="nav-link-container">
                 <p>Home</p>
-                <p>{">"}</p>
               </div>
             </a>
-          </li>
+          </div>
 
-          <li className="nav-item">
+          <div className="nav-item">
             <a className="nav-link" href="/">
               <div className="nav-link-container">
                 <p>About</p>
-                <p>{">"}</p>
               </div>
             </a>
-          </li>
+          </div>
 
-          <li className="nav-item">
-            <a className="nav-link" href="/">
-              <div className="nav-link-container">
-                <p>Blog</p>
-                <p>{">"}</p>
+          <div
+            className="nav-item"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            <div className="nav-link-container">
+              <p>Blog</p>
+              <p>{">"}</p>
+            </div>
+
+            <div
+              className={`dropdown-menu ${
+                dropdownOpen ? "showdropdownitem-Blog" : ""
+              }`}
+            >
+              <div className="dropdown-item-container">
+                <div className="XButtonContainer">
+                  <button
+                    className="XButton"
+                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                  >
+                    <span className="line line4"></span>
+                    <span className="line line5"></span>
+                  </button>
+                </div>
+
+                <a className="dropdown-item" href="/">
+                  Service 1
+                </a>
+
+                <a className="dropdown-item" href="/">
+                  Service 2
+                </a>
+
+                <a className="dropdown-item" href="/">
+                  Service 3
+                </a>
               </div>
-            </a>
-          </li>
+            </div>
+          </div>
 
-          <li className="nav-item">
+          <div className="nav-item">
             <a className="nav-link" href="/">
               <div className="nav-link-container">
                 <p>Courses</p>
                 <p>{">"}</p>
               </div>
             </a>
-          </li>
+          </div>
 
           {/* Dropdown Menu */}
-          <li
+          <div
             className="nav-item dropdown"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
@@ -132,17 +155,47 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-          </li>
+          </div>
 
-          <li className="nav-item">
+          <div
+            className="nav-item dropdown"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            <div className="nav-link-container">
+              <p>Resourses</p>
+              <p>{">"}</p>
+            </div>
+            <ul
+              className={`dropdown-menu ${
+                dropdownOpen ? "showdropdownitem-Resources" : ""
+              }`}
+            >
+              <li>
+                <a className="dropdown-item" href="/">
+                  Service 1
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="/">
+                  Service 2
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="/">
+                  Service 3
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="nav-item">
             <a className="nav-link" href="/">
               <div className="nav-link-container">
                 <p>Contact</p>
-                <p>{">"}</p>
               </div>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </header>
   );
