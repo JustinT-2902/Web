@@ -6,3 +6,18 @@ body, html {
 p, h1 {
   font-family: 'Poppins';
 }
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  width: 100%;
+}

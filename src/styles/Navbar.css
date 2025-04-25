@@ -1,3 +1,90 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-smoke);
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.GreenLine {
+  display: block;
+  top: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #4a704a;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  background-color: none;
+  transition: all 0.5s;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.Nav-Items-Containers {
+  width: 100px;
+  height: 70px;  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.Nav-Items {
+  width: 100px;
+  height: 66px; 
+  font-family: "Poppins";
+  color: #4a704a;
+  font-weight: 400;
+  transition: 0.2s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.Nav-Line {
+  height: 4px;
+  width: 100%;
+  background-color: #4a704a;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.Nav-Items-Containers:hover .Nav-Line {
+ opacity: 1;
+}
+
+.Nav-Items-Containers:hover .Nav-Items {
+  font-weight: 500;
+  opacity: 1;
+  color: #d4a017;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # General --> Nav Grid
 --------------------------------------------------------------*/
@@ -7,27 +94,11 @@
   --white: #FFFFFF;
 }
 
-.Nav {
-  display: flex;
-  flex-direction: row;
-  background-color: none;
-  transition: all 0.5s;
-  margin: 0;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top:0;
-  left:0;
-  z-index: 1000;
-  width: 100%;
-}
-
 /*--------------------------------------------------------------
 # Logo + Site Name
 --------------------------------------------------------------*/
 .LogoImage {
-  line-height: 0;
-  width: 60px;
+  width: 100px;
   margin: 10px 0 10px 10px;
 
 }
@@ -39,13 +110,28 @@
   text-decoration: none;
   gap: 10px;
 }
+.sitename-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
 
 .sitename {
-font-size: 1.5rem;
+font-size: 2rem;
 font-weight: 700;
 margin: 0;
 text-decoration: none;
-color: rgb(28, 134, 28)
+font-family: "Poppins";
+color: #ffffff;
+    text-shadow:
+        -2px -2px 0 #4a704a, /* Top-left shadow */
+         2px -2px 0 #4a704a, /* Top-right shadow */
+        -2px  2px 0 #4a704a, /* Bottom-left shadow */
+         2px  2px 0 #4a704a, /* Bottom-right shadow */
+         0    0   0 #4a704a; /* Center shadow for thickness */
 }
 
 .sitename:hover {
@@ -58,19 +144,21 @@ color: rgb(28, 134, 28)
 .search-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  margin-left: 20px;
-  min-width: none;
+  margin-left: 30px;
+  margin-right: 20px;
   max-width: fit-content;
+  border-radius: 5px;
 }
 
 .search-container:hover {
-  background-color: #fbfdfa;
-  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: #4a704a 0px 0px 5px;
   transition: all 0.5s;
-  padding: 5px 200px 5px 20px;
-
+  padding: 10px 20px 10px 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .search-bar {
@@ -80,6 +168,7 @@ color: rgb(28, 134, 28)
   padding: 10px;
   font-family: "Poppins";
   font-size: 16px;
+  width: 600px;
 }
 
 .search-button {
@@ -113,7 +202,7 @@ color: rgb(28, 134, 28)
   justify-content: space-between;
   background-color: transparent;
   margin-right: 30px;
-  opacity: 0.8;
+  cursor: pointer;
 }
 
 .line {
@@ -123,21 +212,15 @@ color: rgb(28, 134, 28)
   border-radius: 10px;
 }
 
-.line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-  background-color: #9bf865;
-}
-
-.line2 {
-  transition: transform 0.2s ease-in-out;
-  background-color: rgb(90, 196, 99) 
-}
-
+.line1,
+.line2,
 .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-  background-color: rgb(56, 163, 97)
+  background-color: #ffffff;
+  box-shadow:-2px -2px 0 #4a704a, /* Top-left shadow */
+  2px -2px 0 #4a704a, /* Top-right shadow */
+ -2px  2px 0 #4a704a, /* Bottom-left shadow */
+  2px  2px 0 #4a704a, /* Bottom-right shadow */
+  0    0   0 #4a704a; /* Center shadow for thickness */
 }
 
 .hamburger-lines:hover {
@@ -158,7 +241,7 @@ color: rgb(28, 134, 28)
   margin:0;
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: space-between;
   align-items: left;
   z-index: 1000;
   position: fixed;
@@ -192,12 +275,12 @@ color: rgb(28, 134, 28)
 .nav-item {
   margin: 0px 20px 0px 20px;
   padding: 10px;
-
+  border-radius: 5px;
+  cursor: pointer;
 }
+
 .nav-item:hover {
   background-color: #ccebd9;
-  color: white;
-  border-radius: 5px;
   transition: all 0.5s;
 }
 
@@ -211,7 +294,6 @@ color: rgb(28, 134, 28)
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 .dropdown-item {
   text-decoration: none;
@@ -231,53 +313,72 @@ color: rgb(28, 134, 28)
 
 
 .XButton{
-  height: 30px;
-  width: 37.5px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  background-color: transparent;
-  margin-right: 10px;
-  margin-top: 15px;
   opacity: 0.8;
   cursor: pointer;
+  background-color: transparent;
 }
 
-.line4 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-  background-color: #6fd434;
-  transform: rotate(45deg);
+.XButton-Icon {
+  width: 30px;
+  margin: 10px;
 }
-
-.line5 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-  background-color: #6fd434;
-  transform: rotate(-45deg);
-}
-
 .XButtonContainer{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin: 10px;
   align-items: center;
-  gap: 18px;
-
 }
-.XImage {
-  width: 38px;
+
+/*--------------------------------------------------------------
+# Channels
+--------------------------------------------------------------*/
+.Channel-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color:rgb(249, 250, 249);
+}
+
+.Join-Community-Container,
+.Log-In-Container {
+  display: fixed;
+  bottom:0;
+  right:0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin: 10px;
+  background-color:rgb(249, 250, 249);
+  border-radius: 2px;
+  border: 2px solid #4a704a;
+}
+
+.Join-Community-Text,
+.Log-In-Text {
+  font-size: 20px;
+  color: #4a704a;
+  font-weight: 700;
+  font-family: "Poppins";
+  padding: 10px;
+  text-align: center;
+}
+
+.Log-In-Container{
+  background-color: #4a704a;
+}
+
+.Log-In-Text{
+  color: white;
 }
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @media (max-width: 600px) {
-  .search-container {
-    display: none;
-  }
 
   .LogoImage {
     width: 50px;
@@ -309,8 +410,7 @@ color: rgb(28, 134, 28)
   }
 
   .nav-item:hover {
-    background-color: #ccebd9;
-    color: white;
+    background-color: #4a704a;
     border-radius: 5px;
     transition: all 0.5s;
   }
@@ -351,16 +451,14 @@ color: rgb(28, 134, 28)
 }
 
 .showdropdownitem-Blog{
-    z-index: 1100;
-    opacity: 1;
-    margin-left:0;
-}
-
-.showdropdownitem-Blog .nav-collapse.show {
-  display: none;
+  display: block;
+  z-index: 1100;
+  opacity: 1;
+  margin-left:0;
 }
 
 .dropdown-item-container {
+  display: none;
   display: flex;
   flex-direction: column;
   justify-content: top;

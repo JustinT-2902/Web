@@ -1,0 +1,167 @@
+.Footer {
+  background-color: #4a704a;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.Contact-Container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.Contact-request-Container {
+  height: auto;
+  max-width: 770px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.Project-Head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.Contact-Items-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  gap: 20px;
+  margin: 20px 
+  50px;
+}
+
+.Contact-Items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Contact-Item-Inputs {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.Contact-Name {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins";
+  color: var(--dark-green);
+}
+
+.Contact-Input {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  padding: 5px;
+  color: var(--grey);
+}
+
+.Contact-Input-Message {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid var(--orange);
+  padding: 5px;
+  color: var(--grey);
+}
+
+.Contact-Input-Message::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+.Request-Button{
+  background-color: #4a704a;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Poppins";
+  padding: 10px;
+}
+
+.Informations {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.Contact-Information{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Logo,
+.Contact-Title,
+.Menu,z
+.Follow {
+  font-size: 30px;
+  font-weight: 1000;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+
+
+.Quote,
+.Contact-Details,
+.Right,
+.Menu-chosen {
+  font-size: 16px;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #E0E0E0;
+  font-weight: 500;
+}
+
+
+
+.Media-Container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.media-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.Tiktok-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.Menu-container{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  gap: 20px;
+}

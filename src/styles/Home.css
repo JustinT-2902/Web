@@ -1,4 +1,610 @@
-.background {
+.home-page {
+  margin-top: 150px;
+}
+
+.Introduction {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.Green-Line {
+  height: 6px;
+  width: 100px;
+  background-color: #4a704a;
+  margin-top: 68px;
+}
+
+.Heading {
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.Sub-Head p, span{
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.Prefix {
+  color: var(--dark-green);
+}
+
+.name {
+  color: #d4a017;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.Action-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.View-Container{
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+  align-items: center;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 1px 2px;
+  background-color: #dfad2e;
+  cursor: pointer;
+}
+
+.View {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #4a704a;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+.Arrow-Container {
+  background-color: white;
+  border-radius: 50px;
+  margin: 2px 2px 2px 20px;
+  padding: 8px 12px;
+}
+
+.Arrow-Icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+.Hire {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color:black;
+  padding: 10px 30px;
+  border: 3px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.Break-Line{
   width: 100%;
-  filter: brightness(0.8);
+  height: 7px;
+  background-color: #4a704a;
+  border: 3px solid #dfad2e;
+}
+
+.About-Me {
+  background-color: #4a704a;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.About-Me-Content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Yellow-Line {
+  width: 40px;
+  height: 5px;
+  background-color: #dfad2e;
+  border: 3px solid #dfad2e;
+  margin-top: 22px;
+}
+
+.Ab {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.Who-is {
+  color: rgb(255, 255, 255);
+}
+
+.JustinT {
+  color: #dfad2e;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.Description-Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.About-Icon {
+  width: 40px;
+}
+
+.Description {
+  color: white;
+  font-family: "Poppins";
+  font-size: 30px;
+  padding-left: 5px;
+  font-weight: 500;
+}
+
+.Sub-Description {
+color: white;
+font-family: "Poppins";
+font-size: 16px;
+}
+
+.ActionT-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.ViewT-Container{
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 1px;
+  background-color: #dfad2e;
+  cursor: pointer;
+}
+
+.View {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #4a704a;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+.Arrow-Container {
+  background-color: white;
+  border-radius: 50px;
+  margin: 2px 2px 2px 20px;
+  padding: 8px 12px;
+}
+
+.Arrow-Icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+.CV-Container {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #dfad2e;
+  border-radius: 25px;
+  cursor: pointer;
+  align-items: center;
+  padding: 3px 25px;
+  gap: 10px;
+}
+
+.Download-Icon {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.CV {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color:rgb(255, 255, 255);
+}
+
+
+/* Services Section */
+.Services {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.Services-Head {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: end;
+  justify-content: space-between;
+  margin: 0 100px;
+  flex-wrap: wrap;
+}
+
+.Services-Head-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Services-Head-Content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.YellowS-Line {
+  width: 40px;
+  height: 5px;
+  background-color: #dfad2e;
+  border: 3px solid #dfad2e;
+}
+
+.Sv {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  color:#4a704a;
+}
+
+.ActionS-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.ViewS-Container{
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+  align-items: center;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 1px;
+  background-color: #dfad2e;
+  cursor: pointer;
+}
+
+.View {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #4a704a;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+.Arrow-Container {
+  background-color: white;
+  border-radius: 50px;
+  margin: 2px 2px 2px 20px;
+  padding: 8px 12px;
+}
+
+.Arrow-Icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+.Provide{
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.Services-Sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 100px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Services-Sub-Container {
+  width: 450px;
+  min-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 20px;
+  background-color: var(--white-smoke);
+}
+
+.Services-icon {
+  width: 100px;
+  padding: 20px;
+  border: 6px solid #dfad2e;
+  border-radius: 50px;
+  margin: 20px;
+  background-color: white;
+}
+
+.Services-Sub-Content {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  margin-left: 20px;
+}
+
+.Services-Sub-Details {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: black;
+  margin-left: 20px;
+}
+
+/* Tools Section */
+
+.Tools {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  background-color: var(--white-smoke);
+}
+
+.Tools-Head-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+.Tools-Head-Content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tool-Sub-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 100px 100px 100px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Tool-Icon-Field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.Tool-Icon-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid #f1eeee;
+  border-radius: 100px;
+  background-color: white;
+  width: 120px;
+  height: 120px;
+}
+
+.Tool-Icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+}
+
+.Icon-Name {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #dfad2e;
+}
+
+/* Project Section */
+
+.Projects {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.Projects-Head {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 100px;
+  flex-wrap: wrap;
+}
+
+
+.Projects-Head-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Projects-Head-Content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.YellowP-Line {
+  width: 40px;
+  height: 5px;
+  background-color: #dfad2e;
+  border: 3px solid #dfad2e;
+}
+
+.Pr {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  color: #4a704a;
+}
+
+.ActionP-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.ViewP-Container {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+  align-items: center;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 1px;
+  background-color: #dfad2e;
+  cursor: pointer;
+}
+
+.View {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #4a704a;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+.Arrow-Container {
+  background-color: white;
+  border-radius: 50px;
+  margin: 2px 2px 2px 20px;
+  padding: 8px 12px;
+}
+
+.Arrow-Icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+.Projects-Sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 100px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Projects-Sub-Container {
+  width: 450px;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #dfad2e;
+  border-radius: 20px;
+  background-color: var(--white-smoke);
+  padding: 20px;
+}
+
+.Projects-Sub-Content {
+  width: auto;
+  border-radius: 20px;
+}
+
+.Project-Image {
+  width: 100%;  /* Make it fit inside the container */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #d4d2d2;
+  border-radius: 20px;
+  margin: 0 auto; /* Center the image if needed */
+  display: block;
+  object-fit: contain; /* Ensure the whole image is visible */
+}
+
+.Projects-Sub-Details {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: black;
+}
+
+.Projects-Title {
+  display: inline-block;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  border-radius: 20px;
+  background-color: #dfad2e;
+  padding: 5px 10px;
+  margin-top: 20px;
+  
+}
+
+.Projects-Link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 10px;
+}
+
+.Project-Name {
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+
+.ArrowP-Icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border: 2px solid #dfad2e;
+  border-radius: 50px;
 }

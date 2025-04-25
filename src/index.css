@@ -1,9 +1,12 @@
 /* src/index.css */
 :root {
+  --dark-green: #4a704a;
   --primary-green: #2E7D32;    /* Deep forest green for headers/buttons */
   --light-green: #A5D6A7;      /* Light green for accents/hovers */
-  --white: #FFFFFF;            /* White background */
+  --white: #ffffff;
+  --white-smoke: #F5F5F5;            /* White background */
   --text-gray: #666;          /* Subtle text color */
+  --orange: #dfad2e;
 }
 
 * {
@@ -20,13 +23,8 @@ body {
 }
 
 a {
-  color: var(--primary-green);
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: var(--light-green);
+  margin: 0px;
 }
 
 /* Reset and normalize styles */
@@ -41,4 +39,8 @@ button, input, textarea {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+p {
+  color: black;
 }
